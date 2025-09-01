@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cadastro Usuário</h1>
+    <div>
+        <label for="">Nome:</label>
+        <input type="text" id="nome">
+    </div>
+    <div>
+        <label for="">Email:</label>
+        <input type="text" id="email">
+    </div>
+    <div>
+        <label for="">Senha:</label>
+        <input type="password" id="senha">
+    </div>
+    <div>
+        <label for="">Confirmar Senha:</label>
+        <input type="password" name="confirmarsenha" id="confirmarSenha">
+    </div>
+    <div>
+        <label for="datadenascimento">Data de Nascimento:</label>
+        <input type="date" name="datadenascimento" id="data">
+    </div>
+    <button onclick="enviarFormu()">Enviar</button>
+<script>
+
+    function enviarFormu(){
+        let Nome = document.getElementById('nome').value;
+        let Email = document.getElementById('email').value;
+        let Senha = document.getElementById('senha').value;
+        let Data = document.getElementById('data').value;
+        
+        if(Nome.length < 3){
+            alert("Nome Invalido");
+        }
+
+        if(!email.includes ('@') || !email.endsWith('.com')){
+            alert("Email inválido")
+        }
+
+    }
+
+</script>
+
+</body>
+</html>
